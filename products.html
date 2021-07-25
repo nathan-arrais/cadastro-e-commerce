@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+  <section class="home" id="home">
+    <div class="container text">
+      <header class="menu">
+        <a href="index.html" class="logo">Narf</a>
+        <ul class="menu_nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Produtos</a></li>
+          <li><a href="clients.html">Clientes</a></li>
+          <li><a href="estoque.html"><i class="fas fa-shopping-cart"></i></a> <span id="totalEstoque">0</span></li>
+        </ul>
+      </header>
+      <div class="register">
+        <h2>Produtos</h2>
+        <form>
+          <table>
+            <tr>
+              <td>Nome do produto:</td>
+              <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+            <tr>
+              <td>Código do produto:</td>
+              <td><input id="txtCodProduto" type="text"></td>
+            </tr>
+            <tr>
+              <td>Quantidade do produto:</td>
+              <td>
+                <select id="qtidadeProduto">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="button" value="Cadastrar" class="btn" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+                <input type="button" value="Ver estoque" class="btn" onclick="window.open('estoque.html','_self')">
+                <input type="reset" value="Limpar" class="btn">
+              </td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+    </div>
+    <div class="container images"><img src="img/dave-cadwell-noAIW7PNqNE-unsplash.jpg" alt=""></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
