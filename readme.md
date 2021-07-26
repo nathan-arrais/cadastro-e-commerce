@@ -20,6 +20,14 @@
 
 
 
+## Funcionalidades:
+
+- Página inicial com dois botões que redirecionam para os formulários de cadastro.
+- Clientes, onde é possível cadastrar novas pessoas, visualizar as já cadastradas e checar a quantidade de cadastros.
+- Produtos, onde é possível cadastrar novos itens, visualizar os já cadastrados e checar a quantidade de cadastros.
+
+
+
 
 
 
